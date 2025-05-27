@@ -1,4 +1,4 @@
-local config = require 'my-theme.config'
+local config = require 'claude-code.config'
 
 local colorscheme = {
   standardWhite = '#ffffff',

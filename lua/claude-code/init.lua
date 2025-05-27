@@ -1,8 +1,8 @@
-local bufferline = require 'my-theme.integrations.bufferline'
-local cmp = require 'my-theme.integrations.cmp'
-local colorscheme = require 'my-theme.colorscheme'
-local config = require 'my-theme.config'
-local utils = require 'my-theme.utils'
+local bufferline = require 'claude-code.integrations.bufferline'
+local cmp = require 'claude-code.integrations.cmp'
+local colorscheme = require 'claude-code.colorscheme'
+local config = require 'claude-code.config'
+local utils = require 'claude-code.utils'
 local theme = {}
 
 local function set_terminal_colors()
@@ -367,7 +367,7 @@ end
 function theme.colorscheme()
   if vim.version().minor < 8 then
     vim.notify(
-      'Neovim 0.8+ is required for my-theme colorscheme',
+      'Neovim 0.8+ is required for claude-code colorscheme',
       vim.log.levels.ERROR,
       { title = 'Min Theme' }
     )
@@ -381,7 +381,7 @@ function theme.colorscheme()
 
   vim.g.VM_theme_set_by_colorscheme = true
   vim.o.termguicolors = true
-  vim.g.colors_name = 'my-theme'
+  vim.g.colors_name = 'claude-code'
 
   set_terminal_colors()
   set_groups()
